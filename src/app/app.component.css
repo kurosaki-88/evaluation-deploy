@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div mat-checkbox {
+  position: fixed;
+  right: 5px;
+  top: 5px;
+}
+
+div.book {
+	background-image: url('/assets/Book-icon.png');
+	background-size: cover;
+}
+
+mat-card {
+	width: 300px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+img {
+	scale: 0.1;
+}
+
+/* Background from : https://codepen.io/dholtby/pen/NPBdra */
+
+.backstretch {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #1e5799; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1e5799), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #1e5799 0%,#7db9e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+  
+.backstretch.animated {
+  -webkit-animation: filter-animation 8s infinite;
+  animation: filter-animation 8s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    -webkit-filter: hue-rotate(100deg);
+  }
+  
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    filter: hue-rotate(100deg);
+  }
+  
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
