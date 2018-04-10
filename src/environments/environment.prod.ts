@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: '/assets/data/poc.json'
+    apiUrl: '/evaluation-djek/assets/data/poc.json'
 };
